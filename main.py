@@ -3,9 +3,12 @@ def get_book_text(file):
         file_contents = f.read()
     return file_contents
 
-def count_words(file_contents):
-    words = file_contents.split()
-    return len(words)
+from stats import count_words
+
+#bookbot CH2 L5 Created and moved this to stats.py and replaced with line above
+#def count_words(file_contents):
+    #words = file_contents.split()
+    #return len(words)
 
 def main():
     contents = get_book_text("books/frankenstein.txt")
